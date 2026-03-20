@@ -1,0 +1,183 @@
+/* すべてのページに適用される設定 */
+html {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0 0 0 0;
+}
+p, li, td {
+    line-height: 1.7;
+}
+a:link {
+    color: skyblue;
+    text-decoration: none;
+}
+a:visited {
+    color: navy;
+    text-decoration: none;
+}
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+a:active {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* すべてのページに適用 - ヘッダー */
+.logo img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0 auto;
+}
+.logo a {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+}
+.nav ul {
+    margin: 15px 0 0 0;
+    padding: 0;
+    list-style-type: none;
+
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* すべてのページに適用 - ヒーロー */
+.hero {
+    text-align: center;
+}
+
+/* すべてのページに適用 - メイン */
+main {
+    margin: 90px auto 90px auto;
+    max-width: 1000px;
+}
+main h2 {
+    margin: 60px 0 20px 0;
+    border-bottom: 2px solid #253958;
+    padding: 0 0 5px 0;
+    color: #0000FF;
+    font-size: 1.3rem;
+}
+
+/* すべてのページに適用 - フッター */
+.gotop img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 0 auto;
+}
+
+.copyright {
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    background-color: #253958;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* 個別のスタイル */
+
+/* index.html */
+.latest-info {
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 100px;
+}
+.latest-info h2 {
+    border-bottom: 2px solid #253958;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+}
+.latest-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+.latest-text p {
+    margin-bottom: 5px;
+}
+.latest-text ul {
+    margin-top: 0;
+}
+.latest-info img {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.club-info {
+    border-collapse: collapse;
+}
+.club-info th, .club-info td {
+    border: 1px solid #DBDBDB;
+    padding: 20px;
+}
+.club-info th {
+    width: 112px;
+    text-align: left;
+    vertical-align: top;
+}
+
+/* performed works.html */
+.works {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.work img {
+    width: 100%;
+    height: auto;
+}
+
+/* faq.html */
+.faq li {
+    padding: 5px;
+}
+
+/* モバイル対応 */
+@media (max-width: 767px) {
+    .nav ul {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    main {
+        padding: 0 4%;
+    }
+
+    .latest-content {
+        flex-direction: column;
+    }
+
+    .latest-info img {
+        max-width: 100%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    /* performedworks.html */
+    .works {
+        grid-template-columns: 1fr;
+    }
+
+}
