@@ -110,7 +110,7 @@ main h2 {
     z-index: 1;
 }
 
-.latest-content {
+.latest-contents {
     display: flex;
     align-items: flex-start;
     gap: 40px;
@@ -164,19 +164,16 @@ main h2 {
 }
 
 /* works summary */
-.work-content img {
+.work-contents img {
     width: 100%;
     max-width: 400px;
     height: auto;
 }
 
-.work-content {
+.work-contents {
     display: flex;
     align-items: flex-start;
     gap: 40px;
-}
-.work-content p {
-    margin-bottom: 5px;
 }
 
 /* モバイル対応 */
@@ -189,7 +186,7 @@ main h2 {
         padding: 0 4%;
     }
 
-    .latest-content {
+    .latest-contents {
         flex-direction: column;
     }
 
@@ -205,7 +202,7 @@ main h2 {
     }
 
     /* works summary */
-    .work-content {
+    .work-contents {
         flex-direction: column;
     }
 
